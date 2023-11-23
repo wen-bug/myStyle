@@ -13,6 +13,7 @@ const {t} = useI18n();
     Outside of work, I like to <a class="underline decoration-pink-500">watch
     pod-racing</a> and have <a class="underline decoration-indigo-500">light-saber</a> fights.
   </p>
+  <i-carbon-agriculture-analytics></i-carbon-agriculture-analytics>
 </template>
 
 <style scoped>

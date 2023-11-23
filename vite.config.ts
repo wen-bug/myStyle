@@ -6,6 +6,8 @@ import { AntDesignVueResolver } from 'unplugin-vue-components/resolvers';
 import tailwindcss from  'tailwindcss'
 import autoprefixer from 'autoprefixer'
 import path from 'path';
+import Icons from 'unplugin-icons/vite';
+import IconsResolver  from 'unplugin-icons/resolver';
 export default defineConfig({
   resolve: {
     alias: {
@@ -18,8 +20,12 @@ export default defineConfig({
         AntDesignVueResolver({
           importStyle: false, // css in js
         }),
+        IconsResolver(),
       ],
     }),
+    Icons({
+      autoInstall: true,
+    })
   ],
   css: {
     postcss: {
